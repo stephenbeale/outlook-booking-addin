@@ -26,7 +26,14 @@ function getBookingDate() {
 function getEmailBody(bookingDate) {
   return "Hi there,<br><br>" +
     "I would like to request a room booking as per below:<br><br>" +
-    bookingDate + "<br><br>" +
+    "<ul>" +
+    "<li>Full name: Stephen Beale</li>" +
+    "<li>Residences: Great Dover Street</li>" +
+    "<li>Room: Single</li>" +
+    "<li>Date: " + bookingDate + "</li>" +
+    "<li>Duration: 1 night</li>" +
+    "<li>Mobile: 07803571590</li>" +
+    "</ul><br>" +
     "Kind regards,<br>" +
     "Steve Beale";
 }
@@ -34,7 +41,12 @@ function getEmailBody(bookingDate) {
 function getEmailBodyPlainText(bookingDate) {
   return "Hi there,\n\n" +
     "I would like to request a room booking as per below:\n\n" +
-    bookingDate + "\n\n" +
+    "- Full name: Stephen Beale\n" +
+    "- Residences: Great Dover Street\n" +
+    "- Room: Single\n" +
+    "- Date: " + bookingDate + "\n" +
+    "- Duration: 1 night\n" +
+    "- Mobile: 07803571590\n\n" +
     "Kind regards,\nSteve Beale";
 }
 
