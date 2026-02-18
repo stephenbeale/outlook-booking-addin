@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Room Booking Helper</title>
+  <link rel="stylesheet" href="taskpane.css"/>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script src="taskpane.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Room Booking Helper</h1>
+
+    <div class="preview-card">
+      <p class="label">Booking date (28 days from today):</p>
+      <p class="date" id="bookingDate">Calculating...</p>
+    </div>
+
+    <div class="preview-card">
+      <p class="label">Email preview:</p>
+      <div class="email-preview" id="emailPreview"></div>
+    </div>
+
+    <button id="composeBtn" class="compose-btn" disabled>Compose Booking Email</button>
+
+    <p class="note">Sends to kingsresidences@kcl.ac.uk</p>
+  </div>
+</body>
+</html>
